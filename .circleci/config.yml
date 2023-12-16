@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "pwd;whoami;ls -al;printenv;"
+          command: "pwd;whoami;ls -al;printenv;echo $MY_ENV_VAR"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
